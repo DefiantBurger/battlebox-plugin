@@ -1,0 +1,20 @@
+name: BattleBox
+version: '${project.version}'
+main: tech.defiantburger.battlebox.BattleBox
+api-version: 1.18
+authors: [ DefiantBurger ]
+description: A BattleBox plugin built for Sawb
+website: defiantburger.tech
+commands:
+  battlebox:
+    permission: battlebox.user
+    description: The main command for all features of the BattleBox plugin.
+    usage: /<command>
+    aliases: bb
+permissions:
+  battlebox.user:
+    op: true
+    default: true
+  battlebox.op:
+    op: true
+    default: false
